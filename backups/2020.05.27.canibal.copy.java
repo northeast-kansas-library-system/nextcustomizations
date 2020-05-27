@@ -1,7 +1,6 @@
 $(document).ready(function() {
 //never delete anything above this comment
 
-
 $('#pat_memberentrygen #zipcode').attr('maxlength', '5');
 
   $('#wrong-transfer-modal .modal-footer, #item-transfer-modal .modal-footer, #hold-found2 .modal-footer').append('<button id="dropme" type="button" class="btn btn-default" style="display: inline; position: absolute; left: -999px">playsound</button><audio id=alarm><source src=https://raw.githubusercontent.com/northeast-kansas-library-system/next.training/master/source/sounds/transfer.ogg></audio>');
@@ -112,44 +111,7 @@ $('#cat_additem span[id^="error"]').parent().css('text-align', 'right');
  $("body").addClass(branchescode);
 
 //Koha > * (all pages)
- //BEGIN Prevent Checkout search for short strings
-  $("#patronsearch").on('submit', function(e){
-   e.preventDefault();
-   var len = $('#findborrower').val().length;
-   if (len > 3 && len > 1) {
-    this.submit();
-    } else {
-    alert("Please enter four or more characters to perform a checkout search to avoid returning too many results");
-   }
-  });
 
-/* //BEGIN Prevent Patron search for short strings
-  $("#patron_search form").on('submit', function(e){
-   e.preventDefault();
-   var len = $('#searchmember').val().length;
-   if (len > 3 && len > 1) {
-    this.submit();
-    } else {
-    alert("Please enter four or more characters to perform a patron search to avoid returning too many results");
-   }
-  });
-*/
-
- //BEGIN open drop-downs on hover
-  $(".navbar-nav li.dropdown:lt(3)").hover(function(){
-   $(this).addClass("open");
-   }, function(){
-    $(this).removeClass("open");
-   }
-  );
-
- //BEGIN adds date in mm/dd/yyyy format to #todaysdate on every page in the system - very useful
-  var now = new Date();
-  var day = ("0" + now.getDate()).slice(-2);
-  var month = ("0" + (now.getMonth() + 1)).slice(-2);
-  var year = ("0" + (now.getFullYear())).slice(-4);
-  var now = (month) + "/" + (day) + "/" + (year);
-  $(".gradient").before("<span id='todaysdate' style='display: none;'>"+ now + "</span>");
 
  //BEGIN Fix searches by striping parenthesis and semicolons from links
   $('a[href*="search.pl"]').attr('href', function(_,v){
@@ -157,9 +119,6 @@ $('#cat_additem span[id^="error"]').parent().css('text-align', 'right');
      }).attr('href', function(_,v){
    return v.replace(/(\(|\)|\;|\!)/g,'')
   });
-
- //BEGIN disable autocomplete in checkout box
-  $("#patronsearch").attr("autocomplete","off")
 
  //BEGIN re-logo the staff client
   //All pages-url for logo https://nekls.org/wp-content/uploads/2018/03/nekls_next_logo.png
