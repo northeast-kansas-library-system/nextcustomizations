@@ -1,7 +1,7 @@
 $(document).ready(function() {
 //never delete anything above this comment
 
-//BEGIN re-logo the staff client (goes first)
+//BEGIN re-logo the staff client (goes first) - github
  //All pages-url for logo https://nekls.org/wp-content/uploads/2018/03/nekls_next_logo.png
   $("#header_search").before('<div id="newlogo" style="float: left; padding: 10px; height: 88;"><a href="/cgi-bin/koha/mainpage.pl"><img src="https://nekls.org/wp-content/uploads/2018/03/nekls_next_logo.png" height="50" width="150"><p style="font-size: 75%;">A service of NEKLS</p></a></div>');
 
