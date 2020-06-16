@@ -1687,5 +1687,7 @@ $('.problem:contains("New value:")').wrapInner('<span></span>')
 var logliblogo=$(".logged-in-branch-code:first").text().trim().toLowerCase();
 $('#header_search').after('<div id="liblogo" style="float: right; padding: 20px; max-height: 88px; background: #a6d7f2 !important;"><img alt="' + loglibnode + '"src="https://nekls.org/wp-content/uploads/2020/05/' + logliblogo + '.png" style="max-height: 50px;"><p style="font-size: 75%;">'+ loglibnode+'</p></div>');
 
+(".logged-in-branch-name").text().trim()
+
 //never delete anything below this comment
 });

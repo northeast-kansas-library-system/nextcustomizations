@@ -3,7 +3,7 @@
 //Special code for the test server
  //BEGIN blue background on test
   var url = $(location).attr('href');
-  if(url.indexOf("staff-test") != -1){
+  if(url.indexOf("test") != -1){
    $("body").css("background-image", "url(https://nekls.org/wp-content/uploads/2018/09/test.server100.jpg)");
    $(".gradient").prepend("<div><h1 align='center'>! TEST SERVER !</h1></div>");
    $(".gradient").prepend("<div><h1 align='center'>! George is updating many features in preperation for the June 27, 2020 upgrade !</h1></div>");
