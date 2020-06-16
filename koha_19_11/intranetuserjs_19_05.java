@@ -2,7 +2,7 @@ $(document).ready(function() {
 //never delete anything above this comment
 
 
-$('#pat_memberentrygen #zipcode').attr('maxlength', '5');
+
 
   $('#wrong-transfer-modal .modal-footer, #item-transfer-modal .modal-footer, #hold-found2 .modal-footer').append('<button id="dropme" type="button" class="btn btn-default" style="display: inline; position: absolute; left: -999px">playsound</button><audio id=alarm><source src=https://raw.githubusercontent.com/northeast-kansas-library-system/next.training/master/source/sounds/transfer.ogg></audio>');
 
@@ -995,6 +995,9 @@ $('.checkouts-by-itemtype').addClass('checkout-summary');
     $("#memberentry_identity label[for='surname']").html("Last name:");
     $("#memberentry_identity label[for='firstname']").html("First name +/<br />middle initial /<br />or middle name:");
     $("#memberentry_identity label[for='othernames']").html("Nickname /<br />other name:");
+
+  //Force zip codes to 5 digit entry
+   $('#pat_memberentrygen #zipcode').attr('maxlength', '5');
 
   //Guarantor information
    //BEGIN rename fields "Surname" to "Last Name," "First Name" to "First/Middle Name"
