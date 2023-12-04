@@ -1407,24 +1407,3 @@ div.lastchecked {
     display: none;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1304,24 +1304,3 @@ Preference value:
   </div>
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -2516,13 +2516,618 @@ $(document).ready(function() {
                 if ($('table tr > th:not(.collapsed)').length) 
                   $('table').removeClass('collapsed'); 
                 else 
-                  $('table').addClass('collaps
-
-
-
-
-
-
-
-
-
+                  $('table').addClass('collapsed'); 
+              }); 
+            //Hide 'Patron category' row by default 
+              //$('#default-circulation-rules th:nth-child(1), #default-circulation-rules td:nth-child(1)').addClass('hiderule'); 
+            //Hide 'Item type' row by default 
+              //$('#default-circulation-rules th:nth-child(2), #default-circulation-rules td:nth-child(2)').addClass('hiderule'); 
+            //Hide 'Actions (1)' row by default 
+              //$('#default-circulation-rules th:nth-child(3), #default-circulation-rules td:nth-child(3)').addClass('hiderule'); 
+            //Hide 'Note' row by default 
+              //$('#default-circulation-rules th:nth-child(4), #default-circulation-rules td:nth-child(4)').addClass('hiderule'); 
+            //Hide 'Current checkouts allowed' row by default 
+              //$('#default-circulation-rules th:nth-child(5), #default-circulation-rules td:nth-child(5)').addClass('hiderule'); 
+            //Hide 'Current on-site checkouts allowed' row by default 
+              //$('#default-circulation-rules th:nth-child(6), #default-circulation-rules td:nth-child(6)').addClass('hiderule'); 
+            //Hide 'Loan period' row by default 
+              //$('#default-circulation-rules th:nth-child(7), #default-circulation-rules td:nth-child(7)').addClass('hiderule'); 
+            //Hide 'Days mode' row by default 
+              $('#default-circulation-rules th:nth-child(8), #default-circulation-rules td:nth-child(8)').addClass('hiderule'); 
+            //Hide 'Unit' row by default 
+              //$('#default-circulation-rules th:nth-child(9), #default-circulation-rules td:nth-child(9)').addClass('hiderule'); 
+            //Hide 'Hard due date' row by default 
+              //$('#default-circulation-rules th:nth-child(10), #default-circulation-rules td:nth-child(10)').addClass('hiderule'); 
+            //Hide 'Decreased loan period for high holds (day)' row by default 
+              $('#default-circulation-rules th:nth-child(11), #default-circulation-rules td:nth-child(11)').addClass('hiderule'); 
+            //Hide 'Fine amount' row by default 
+              //$('#default-circulation-rules th:nth-child(12), #default-circulation-rules td:nth-child(12)').addClass('hiderule'); 
+            //Hide 'Fine charging interval' row by default 
+              //$('#default-circulation-rules th:nth-child(13), #default-circulation-rules td:nth-child(13)').addClass('hiderule'); 
+            //Hide 'When to charge' row by default 
+              //$('#default-circulation-rules th:nth-child(14), #default-circulation-rules td:nth-child(14)').addClass('hiderule'); 
+            //Hide 'Fine grace period' row by default 
+              //$('#default-circulation-rules th:nth-child(15), #default-circulation-rules td:nth-child(15)').addClass('hiderule'); 
+            //Hide 'Overdue fines cap (amount)' row by default 
+              //$('#default-circulation-rules th:nth-child(16), #default-circulation-rules td:nth-child(16)').addClass('hiderule'); 
+            //Hide 'Cap fine at replacement price' row by default 
+              $('#default-circulation-rules th:nth-child(17), #default-circulation-rules td:nth-child(17)').addClass('hiderule'); 
+            //Hide 'Suspension in days (day)' row by default 
+              $('#default-circulation-rules th:nth-child(18), #default-circulation-rules td:nth-child(18)').addClass('hiderule'); 
+            //Hide 'Max. suspension duration (day)' row by default 
+              $('#default-circulation-rules th:nth-child(19), #default-circulation-rules td:nth-child(19)').addClass('hiderule'); 
+            //Hide 'Suspension charging interval' row by default 
+              $('#default-circulation-rules th:nth-child(20), #default-circulation-rules td:nth-child(20)').addClass('hiderule'); 
+            //Hide 'Renewals allowed (count)' row by default 
+              //$('#default-circulation-rules th:nth-child(21), #default-circulation-rules td:nth-child(21)').addClass('hiderule'); 
+            //Hide 'Renewal period' row by default 
+              //$('#default-circulation-rules th:nth-child(22), #default-circulation-rules td:nth-child(22)').addClass('hiderule'); 
+            //Hide 'No renewal before' row by default 
+              $('#default-circulation-rules th:nth-child(23), #default-circulation-rules td:nth-child(23)').addClass('hiderule'); 
+            //Hide 'Automatic renewal' row by default 
+              $('#default-circulation-rules th:nth-child(24), #default-circulation-rules td:nth-child(24)').addClass('hiderule'); 
+            //Hide 'No automatic renewal after' row by default 
+              $('#default-circulation-rules th:nth-child(25), #default-circulation-rules td:nth-child(25)').addClass('hiderule'); 
+            //Hide 'No automatic renewal after (hard limit)' row by default 
+              $('#default-circulation-rules th:nth-child(26), #default-circulation-rules td:nth-child(26)').addClass('hiderule'); 
+            //Hide 'Holds allowed (total)' row by default 
+              //$('#default-circulation-rules th:nth-child(27), #default-circulation-rules td:nth-child(27)').addClass('hiderule'); 
+            //Hide 'Holds allowed (daily)' row by default 
+              //$('#default-circulation-rules th:nth-child(28), #default-circulation-rules td:nth-child(28)').addClass('hiderule'); 
+            //Hide 'Holds per record (count)' row by default 
+              //$('#default-circulation-rules th:nth-child(29), #default-circulation-rules td:nth-child(29)').addClass('hiderule'); 
+            //Hide 'On shelf holds allowed' row by default 
+              //$('#default-circulation-rules th:nth-child(30), #default-circulation-rules td:nth-child(30)').addClass('hiderule'); 
+            //Hide 'OPAC item level holds' row by default 
+              //$('#default-circulation-rules th:nth-child(31), #default-circulation-rules td:nth-child(31)').addClass('hiderule'); 
+            //Hide 'Article requests' row by default 
+              $('#default-circulation-rules th:nth-child(32), #default-circulation-rules td:nth-child(32)').addClass('hiderule'); 
+            //Hide 'Rental discount (%)' row by default 
+              $('#default-circulation-rules th:nth-child(33), #default-circulation-rules td:nth-child(33)').addClass('hiderule'); 
+            //Hide 'Actions (2)' row by default 
+              //$('#default-circulation-rules th:nth-child(34), #default-circulation-rules td:nth-child(34)').addClass('hiderule'); 
+            //Replace the text with a + sign on pre-hidden columns 
+             $("#default-circulation-rules > thead > tr > th.hiderule > span").html("+"); 
+   
+            //BEGIN Create button to expand collapsed rule columns 
+              $("#admin_smart-rules #navmenu").parent().prepend('<a href="#default-circulation-rules"><button id="allshows" type="button" style="margin: 5px">Show full width</button></a>'); 
+              $("#allshows").click(function() { 
+                $("#navhide, #navmenu, #allshows").hide(); 
+                $(".hiderule").removeClass(); 
+                $(".row .col-sm-10.col-sm-push-2").removeClass("col-sm-push-2"); 
+                $(window).trigger('resize'); 
+                window.print(); 
+              }); 
+            //BEGIN expand when super large or multi screen sized page is loaded 
+              if ($(window).width() > 1920) { 
+                $("#navhide, #navmenu, #allshows").hide(); 
+                $(".hiderule").removeClass(); 
+                $(".row .col-sm-10.col-sm-push-2").removeClass("col-sm-push-2"); 
+                $(window).trigger('resize'); 
+              } 
+            //BEGIN expand when window is resized for super large or multi-screen 
+              $( window ).resize(function() { 
+                if ($(window).width() > 1920) { 
+                  $("#navhide, #navmenu, #allshows").hide(); 
+                  $(".hiderule").removeClass(); 
+                  $(".row .col-sm-10.col-sm-push-2").removeClass("col-sm-push-2"); 
+                  $(window).trigger('resize').delay('500'); 
+                } 
+              }); 
+   
+            //BEGIN Sort circulation rules by clicking on footer 
+             /*$('#default-circulation-rules tfoot tr th').click(function() { 
+                var table = $(this).parents('table').eq(0); 
+                var rows = table.find("tbody tr").toArray().sort(comparer($(this).index())); 
+                this.asc = !this.asc; 
+                if (!this.asc) { 
+                  rows = rows.reverse(); 
+                } 
+                for (var i = 0; i < rows.length; i++) { 
+                  table.append(rows[i]); 
+                } 
+              }); 
+              function comparer(index) { 
+                return function(a, b) { 
+                  var valA = getCellValue(a, index), 
+                  valB = getCellValue(b, index); 
+                  return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB); 
+                }; 
+              } 
+              function getCellValue(row, index) { 
+                return $(row).children('td').eq(index).text(); 
+              }*/ 
+              $("#default-circulation-rules #edit_row").insertBefore("tfoot"); 
+   
+            //BEGIN Create button to copy the bottom row on the rules table 
+              $("#admin_smart-rules #edit_row td:nth-child(3)").append("<br /><button id='copyrrow' type='button' style='margin: 5px' class='btn btn-default btn-xs'>Copy bottom row</button>"); 
+              $("#copyrrow").click(function() { 
+                $('#lrrow').removeAttr('id'); 
+                $('#default-circulation-rules tbody tr:last').attr('id', 'lrrow'); 
+                $('#maxissueqty').val($('#lrrow td:eq(4)').text().trim()); 
+                $('#maxonsiteissueqty').val($('#lrrow td:eq(5)').text().trim()); 
+                $('#issuelength').val($('#lrrow td:eq(6)').text().trim()); 
+                $('#fine').val($('#lrrow td:eq(11)').text().trim()); 
+                $('#chargeperiod').val($('#lrrow td:eq(12)').text().trim()); 
+                $('#firstremind').val($('#lrrow td:eq(14)').text().trim()); 
+                $('#overduefinescap').val($('#lrrow td:eq(15)').text().trim()); 
+                $('#fined').val($('#lrrow td:eq(17)').text().trim()); 
+                $('#maxsuspensiondays').val($('#lrrow td:eq(18)').text().trim()); 
+                $('#suspension_chargeperiod').val($('#lrrow td:eq(19)').text().trim()); 
+                $('#renewalsallowed').val($('#lrrow td:eq(20)').text().trim()); 
+                $('#renewalperiod').val($('#lrrow td:eq(21)').text().trim()); 
+                $('#norenewalbefore').val($('#lrrow td:eq(22)').text().trim()); 
+                $('#no_auto_renewal_after').val($('#lrrow td:eq(24)').text().trim()); 
+                $('#reservesallowed').val($('#lrrow td:eq(26)').text().trim()); 
+                $('#holds_per_day').val($('#lrrow td:eq(27)').text().trim()); 
+                $('#holds_per_record').val($('#lrrow td:eq(28)').text().trim()); 
+                $('#rentaldiscount').val($('#lrrow td:eq(32)').text().trim()); 
+              }); 
+   
+          }); 
+   
+   
+      $('.problem.ret_badbarcode') 
+        .contents() 
+        .filter(function() { 
+          return this.nodeType == Node.TEXT_NODE; 
+        }).wrap("<span class='ibctext'></span>"); 
+   
+   
+   
+      $('#pat_memberentrygen').each(function() { 
+        if ($(".logged-in-branch-name:not(:contains(Northeast))", this).length && $(".patroninfo .patroncategory:contains(system)", this).length) { 
+          $('#categorycode_entry').parent().hide(); 
+          $('#libraries').parent().after('<br /><br /><li><label>Category:</label><p style="font-color: red;">Cagegory:  "Staff - system login (exempt)" -- This account\'s category can only be modified by NEKLS staff</p>'); 
+          $('#memberentry_library_management #categorycode_entry option[value="STAFF"]').hide(); 
+        } 
+      }); 
+    
+    $('#pat_memberentrygen #categorycode_entry option[value="STAFF"]').hide();
+    $('#pat_memberentrygen.NEKLS #categorycode_entry option[value="STAFF"]').show();
+   
+      /*  $('#holds-table').on('init.dt', function() { 
+          var suspend_select = $('#holds-table_wrapper #holds-table .hold_location_select').filter(":selected").val(); 
+   
+      if (suspend_select = 'LANSING') { 
+   
+      $('.hold-resume.btn.btn-default.btn-xs').hide(); 
+   
+   
+   
+      } 
+   
+        });*/ 
+   
+   
+        var noibcstring = $('.ibctext').text(); 
+        var noibc =  noibcstring.substr(noibcstring.indexOf(": ") + 1).trim(); 
+        console.log("noibcstring: " + noibcstring); 
+        console.log("noibc: " + noibc); 
+   
+      $('.static_checkin_messages .dialog.alert.audio-alert-warning .problem.ret_badbarcode:contains("No item with barcode:")').append('<br /><br /><a href="https://northeast-kansas-library-system.github.io/next/pages/no_barcode_found.html" target="_blank">What to do when \"No item with barcode\" occurs at checkin - link to best practices <i class="fa fa-external-link" aria-hidden="true"></i></a><br /><a href="/cgi-bin/koha/reports/guided_reports.pl?reports=3282&phase=Run+this+report&param_name=Enter+barcode+number&sql_params=' + noibc + '&limit=500" target="_blank">Item dashboard report - click to run report <i class="fa fa-link" aria-hidden="true"></i></a><br /><a href="/cgi-bin/koha/reports/guided_reports.pl?phase=Run+this+report&reports=3009&sql_params=' + noibc + '&limit=50" target="_blank">Fee notes and descriptions - click to run report <i class="fa fa-link" aria-hidden="true"></i></a>'); 
+   
+   
+        $('#search-form, #cat_search, #searchterms .search-term-row input').attr('onkeyup','this.value = this.value.replace(/[:|;]/g, "-")'); 
+   
+        //Elastic - changes patter to allow for decimal input 
+          $('input[name="search_field_weight"]').attr('pattern','[0-9\.]*'); 
+   
+        $('form[action="/cgi-bin/koha/members/cancel-charge.pl"] input[name="borrowernumber"]').after('<input type="hidden" name="payment_note" value="x">'); 
+   
+      if ($('#catalog_detail').length) { 
+        let bnum = $('#exportModal_ input[name="bib"]').val(); 
+        let url = `/api/v1/public/biblios/${bnum}`; 
+        if (bnum) { 
+          $.ajax({ 
+            type: "GET", 
+            accepts: { 
+              "*": "application/marc-in-json" 
+            }, 
+            url: url, 
+            complete: function(data) { 
+              let bibliodata = data.responseJSON.fields; 
+              bibliodata.forEach(function(arrayItem) { 
+                if (Object.keys(arrayItem) == '942') { 
+                  let the942 = arrayItem['942']['subfields']; 
+   
+                  function isSuppressed(suppressed) { 
+                    return suppressed.n === '1'; 
+                  } 
+                  let the942n = (the942.find(isSuppressed)); 
+                  if ((the942n.length) != 0) { 
+                    $(`<h2 class="alert alert-warning" role="alert" style="width: 90%">This bibliographic record is suppressed from display in the OPAC</h2>`).insertBefore( $('#catalogue_detail_biblio') ) 
+                  } 
+                } 
+              }) 
+            } 
+          }); 
+        } 
+      } 
+   
+   
+        if ($('#cat_addbiblio').length) { 
+        let bnum = $('#f input[name="biblionumber"]').val(); 
+        let url = `/api/v1/public/biblios/${bnum}`; 
+        if (bnum) { 
+          $.ajax({ 
+            type: "GET", 
+            accepts: { 
+              "*": "application/marc-in-json" 
+            }, 
+            url: url, 
+            complete: function(data) { 
+              let bibliodata = data.responseJSON.fields; 
+              bibliodata.forEach(function(arrayItem) { 
+                if (Object.keys(arrayItem) == '942') { 
+                  let the942 = arrayItem['942']['subfields']; 
+   
+                  function isSuppressed(suppressed) { 
+                    return suppressed.n === '1'; 
+                  } 
+                  let the942n = (the942.find(isSuppressed)); 
+                  if ((the942n.length) != 0) { 
+                    $(`<h2 class="alert alert-warning" role="alert" style="width: 90%">This bibliographic record is suppressed from display in the OPAC</h2>`).insertBefore( $('.main.container-fluid') ) 
+                  } 
+                } 
+              }) 
+            } 
+          }); 
+        } 
+      } 
+   
+      //BEGIN Create button to remove dead space on report results before printing 
+        $("#rep_guided_reports_start #navmenu").parent().prepend('<a href="#default-circulation-rules"><button id="fullwidth" type="button" style="margin: 5px">Show full width for better printing</button></a>'); 
+        $("#fullwidth").click(function() { 
+          $("#navmenu, #fullwidth").hide(); 
+          $(".row .col-sm-10.col-sm-push-2").removeClass("col-sm-push-2"); 
+          $(".row .col-sm-10").addClass('col-sm-12'); 
+          $(".row .col-sm-10.col-sm-12").removeClass('col-sm-10'); 
+          $('#rep_guided_reports_start main table').attr('style','width: 100%'); 
+        }); 
+   
+      $('#rep_borrowers_out main h1:contains("Patrons with no checkouts")').append('<br /><h1>Setting a "Not checked out since:" date more than 13 months in the past will give you all patrons who have not checked out in the previous 13 months.</h1>'); 
+   
+        //Modify last lib lime kids icon to whatever you want for collection codes 
+        //$('#liblime-kids > ul:nth-child(1) > li:nth-child(58) > label:nth-child(1) > input:nth-child(2)').val('https://nextkansas.org/images/58382c4ad23877a15565b2477258d96f_knotable.svg'); 
+   
+      $('.patronattributelabel:contains("Collection")').addClass('label-danger').prepend('<i class="fa fa-money" aria-hidden="true"></i>&nbsp;'); 
+      $('.patronattributelabel:contains("Internet ")').addClass('label-success'); 
+      $('.patronattributelabel:contains("Movie")').addClass('label-info').prepend('<i class="fa fa-film" aria-hidden="true"></i>&nbsp;'); 
+      $('.patronattributelabel:contains("Newsletter")').addClass('label-info').prepend('<i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;'); 
+      $('.patronattributelabel:contains("Receipt")').addClass('label-default').prepend('<i class="fa fa-bars" aria-hidden="true"></i>&nbsp;'); 
+      $('.patronattributelabel:contains("Kanopy")').addClass('label-warning').prepend('<i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp;'); 
+   
+      $('.patroninfo .patronbriefinfo .patroncategory:contains("exempt")').prepend('<br /><i class="fa fa-info-circle" aria-hidden="true" style="color:orange"></i>&nbsp;').append('&nbsp;<i class="fa fa-info-circle" aria-hidden="true" style="color:orange"></i><br /><br />'); 
+   
+   
+      //BEGIN add danger label to price at PAOLA when something in the issuestable is 
+        $('.PAOLA #issues-table').on('init.dt', function() { 
+          var highprice = (parseInt($('td:nth-child(13) span:nth-child(1)').text().replace(/[^\d]/g, ''))); 
+          if (highprice > 7400) $('td:nth-child(13) span:nth-child(1)').addClass('label label-danger').css('font-size','115%'); 
+        }); 
+   
+      $('#pat_memberentrygen td #sms10, #pat_memberentrygen td #email10').attr('disabled','disabled'); 
+      $('#pat_memberentrygen td:contains("Hold reminder")').text('Hold reminder (disabled)'); 
+   
+   
+        $("#catalog_results #selection_ops").append('<div class="btn-group" style="padding-left: 50px"><a class="btn btn-default btn-xs" id="results_sh" href="#" style="display: block; width: 125px; border-radius: 5px;"><span id="results_all" style="display: block;">Show all copies</span><span id="results_loc" style="display: none;">Show local copies</span></a></div>'); 
+        $("#results_all").click(function() { 
+          $("#results_loc").show(); 
+          $("#results_all").hide(); 
+          $(".not_local_item").show('slow'); 
+          return false; 
+        }); 
+        $("#results_loc").click(function() { 
+          $("#results_loc").hide(); 
+          $("#results_all").show(); 
+          $(".not_local_item").hide('slow'); 
+          return false; 
+        }); 
+      var loglibnode = $("span.logged-in-branch-name:nth-child(1)").text().trim(); 
+      $('#catalog_results .result_itype_image').addClass('not_local_item'); 
+      $('#catalog_results .not_local_item').hide(); 
+      $('#catalog_results .availability li:contains("' + loglibnode + '")').show().removeClass('not_local_item').addClass('is_local_item'); 
+      $('.is_local_item').wrap('<h3>').append('<br /><h5 class="next_label_light"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Local item <i class="fa fa-arrow-circle-up" aria-hidden="true"></i></h5>'); 
+   
+      $("#bookbag_form div[class='availability']").wrap("<a class='viewLocations' />"); 
+      $("#bookbag_form .results_available_count").prepend('<span class="instruct badge badge-info"> See all items </span><span class="instruct badge badge-info" style="display: none;"> See only local items </span><br />&nbsp;<br />'); 
+      $("#bookbag_form div[class='availability']").parent("td").attr('width', '290'); 
+      $(".viewLocations").click(function() { 
+          $(this).find(".instruct").toggle(); 
+          $(this).parent().parent().find(".not_local_item").toggle('slow'); 
+        }); 
+   
+      //$('#circ_request .request_expiration_date input:nth-child(1)').attr('data-flatpickr-futuredate','true').attr('readonly','true'); 
+   
+      $('.cancel-hold').text('Cancel this request').removeClass('btn-default').addClass('next_label_red'); 
+   
+   
+      //Prevent the modification of, deletion of, or circulation to template accounts 
+      $('#circ_circulation, #pat_moremember, #pat_memberentrygen, #pat_member-flags').each(function() { 
+        if ($('.patroninfo .patroncategory:contains("Staff - Permissions template")', this).length) { 
+          $('#deletepatron, #editpatron').remove(); 
+          $('#saverecord').attr('disabled','disabled').removeClass('btn btn-default').addClass('btn btn-danger').css("color", "white"); 
+          $('#circ_needsconfirmation .approve').remove(); 
+          $('#toolbar').before('<h1>This account can only be modified by a system administrator</h1>'); 
+        } 
+      }); 
+   
+   
+   
+   
+        if ($("#circ_returns .storywalk").length) { 
+          $("#barcode").blur(); 
+        } 
+   
+   
+    //Home > Reports > Guided reports wizard > Saved reports > {reportname} ({reportid}) > Run 
+      //?
+        $('.report_heading_id').attr('class', 'btn-info badge').attr('style','font-size: 20px'); 
+    //Home > Reports > Guided reports wizard > Saved reports > {reportname} ({reportid}) > Run 
+      //Pre-select logged in library when the phrase Choose Library is used for a parameter
+        $('#rep_guided_reports_start #sql_params_Chooseyourlibrary option, #rep_guided_reports_start #sql_params_Itemhomelibrary option').filter(function() {
+          return this.value == loglibbc;
+        }).prop("selected", true);
+    
+      $('#pat_notices .modal-body').click(function() { 
+        $("#pat_notices .modal-body .notice").show();
+        $('#pat_notices .modal-body').each(function(){
+          $('#pat_notices .modal-body').html($('.modal-body .notice').html().replace(/(<br>\n)+/g,""));
+        });
+      }); 
+  
+    
+    
+    
+  });
+  /*------------------------------------------------------------*/
+  
+      /* ========== Contact sheet for circulation page ========== */ 
+   
+      $(document).ready(function () { 
+   
+      //Home > Circulation 
+        //BEGIN - adds contact sheet to "Library contact information" tab in tabbed section of IntranetCirculationHomeHTML system preference 
+          var contact_sheet_url = $(location).attr('href'); 
+          if (contact_sheet_url.indexOf("circulation-home.pl") != -1) { 
+   
+   
+            $.getJSON("/api/v1/libraries", function (data) { 
+   
+              var contact_sheet = ''; 
+   
+              $.each(data, function (key, value) { 
+   
+                var address4 = value.address2 || ''; 
+                var physical_address = address4 || value.address1; 
+                var fax_machine = value.fax || ''; 
+                var zipcode = value.postal_code.substr(0, 5); 
+                var director = value.address3.replace(" | ", "</span></p><p><span>").replace(" | ", "</span></p><p><span>").replace(" | ", "</span></p>"); 
+                var report_branch = value.library_id.replace(/(DONI)\w+/, 'DONI%').replace(/(PH)\w+/, 'PH%'); 
+   
+                contact_sheet += '<tr class="filterme">'; 
+   
+                contact_sheet += '<td scope="row"><p style="font-size: 1.5em">' + value.name + '</p><p><ins>Mailing address:</ins></p><p>' + value.address1 + '<br />' + value.city + ', ' + value.state + ' ' + zipcode + '</p><p><ins>Physical address:</ins></p><p>' + physical_address + '<br />' + value.city + ', ' + value.state + '</p><p><ins>Branch code: </ins>' + value.library_id + '</p></td>'; 
+   
+                contact_sheet += '<td>'; 
+   
+                contact_sheet += '<p>Phone: ' + value.phone + '</p><p>Fax: ' + fax_machine + '</p><p>e-mail: ' + value.email + '</p><p>Courier route #: ' + value.notes + '</p><br /><p class="noprint"><a class="btn" style="color: var(--t_medium); background-color: var(--c_medium); font-size: 1.2em;" href="' + value.url + '" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Website</a></p>' + '</td>'; 
+   
+                contact_sheet += '<td><p><span style="font-size: 1.5em;">' + director + '</span></p><br /><p><a class="btn" style="color: var(--t_light); background-color: var(--c_light); font-size: 1.2em" href="/cgi-bin/koha/reports/guided_reports.pl?reports=3716&phase=Run+this+report&param_name=Choose+your+library|ZBRAN&sql_params=' + report_branch + '" target="_blank"><i class="fa fa-table" aria-hidden="true"></i>&nbsp;&nbsp;Current statistics report for this library</a></p></td>'; 
+   
+                contact_sheet += '<td class="noprint"><p>Logos are no longer available on this page</p></td>'; 
+   
+                contact_sheet += '</tr>'; 
+   
+              }); 
+   
+              $('#library_table th').parent().after(contact_sheet); 
+   
+              console.log("contact_sheet: " + contact_sheet); 
+   
+            }); 
+          } 
+   
+          //add filter function to search the table 
+          $("#myInput").on("keyup", function () { 
+            var value = $(this).val().toLowerCase(); 
+            $(".filtertable .filterme").filter(function () { 
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1); 
+            }); 
+          }); 
+   
+          $(".clear").click(function(){ 
+            $("#myInput").val("").keyup(); 
+            return false; 
+          }); 
+   
+      }); 
+  
+  /* END contact sheet*/
+  
+  /* =========== New stuff ========== */
+  
+  $(document).ready(function () { 
+    
+  //Home > Patrons > [name] > Modify patron ([categorycode])
+    //Trim whitespace and doublespaces from all inputs on patron member entry form
+      $('#pat_memberentrygen input').on('blur', function() { 
+        $(this).val(function(i, value) { 
+          return value.replace(/\s+/g, ' ').trim(); 
+        }); 
+      }); 
+  
+    //$('#cat_addbiblio #toolbar li:contains("Default")').hide();
+    //$('#cat_addbiblio #toolbar li:contains("Brief Records")').hide();
+    $('#cat_addbiblio #toolbar li:contains("Digital assets")').hide();
+    $('#cat_addbiblio #toolbar li:contains("DVD framework")').hide();
+    //$('#cat_addbiblio #toolbar li:contains("Fast add for ILL or temporary circulation")').hide();
+    //$('#cat_addbiblio #toolbar li:contains("Fast add for periodicals, magazines, and newspapers")').hide();
+    $('#cat_addbiblio #toolbar li:contains("NEKLS story walk")').hide();
+    $('#cat_addbiblio #toolbar li:contains("Online resource")').hide();
+    //$('#cat_addbiblio #toolbar li:contains("Realia")').hide();
+    $('#cat_addbiblio #toolbar li:contains("Standard framework")').hide();
+    $('#cat_addbiblio #toolbar li:contains("Y framework")').hide();
+    $('#cat_addbiblio #toolbar li:contains("Z Framework")').hide();
+  
+    //BEGIN uncheck enqueued job boxes so everything is listed
+      $('#admin_background_jobs #only_current, #admin_background_jobs #include_last_hour').prop( "checked", false );
+  
+  //Home > Reports > Guided reports wizard > Saved reports > {report name} ({report id}) > Run 
+    //BEGIN open biblio and item links on hover
+      $('#biblionumber_autolink, #itemnumber_autolink').hover(function() { 
+        $(this).addClass('open'); 
+      }, function() { 
+        $(this).removeClass('open'); 
+      });  
+    
+    $('.head-searchbox').val('');
+    localStorage.setItem('searchbox_value', '');
+    
+  $('#circ_request button:contains("Unsuspend")').parents('tr').addClass('suspended');
+  $('.suspended > td:nth-child(2)').append('<br /><br /><span class="badge" style="font-size: 1.05em"><i class="fa fa-pause" aria-hidden="true"></i> Suspended <i class="fa fa-pause" aria-hidden="true"></i></span><br /><br />');
+  
+  $('#circ_request input[name="reservedate"]').each(function() {
+    var fetchDate=new Date($(this).val());
+    console.log("fetchDate: " +fetchDate);
+    var fetchDay=('0'+(fetchDate.getDate())).slice(-2);
+    var fetchMonth=('0'+(fetchDate.getMonth()+1)).slice(-2);
+    var fetchYear=fetchDate.getFullYear();
+    var reserveDate=fetchYear+fetchMonth+fetchDay;
+    fetchDate=new Date();
+    fetchDay=('0'+(fetchDate.getDate())).slice(-2);
+    fetchMonth=('0'+(fetchDate.getMonth()+1)).slice(-2);
+    fetchYear=fetchDate.getFullYear();
+    var todaysDate=fetchYear+fetchMonth+fetchDay;
+    if (reserveDate > todaysDate) {
+      $(this).parents('tr').addClass('future_request');
+      $('.future_request > td:nth-child(2)').append('<br /><br /><span class="badge" style="font-size: 1.05em;"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> Future date <i class="fa fa-calendar-plus-o" aria-hidden="true"></i></span><br /><br />');
+    }
+  });
+  
+  $('#holds-table').on('init.dt', function() { 
+    $('#pat_moremember #holds-table td:nth-child(11) p:contains("suspended"), #circ_circulation #holds-table td:nth-child(11) p:contains("suspended")').prepend('<i class="fa fa-pause" aria-hidden="true"></i> ').append(' <i class="fa fa-pause" aria-hidden="true"></i>').addClass('badge').css('font-size', '1.05em');
+  });  
+    
+    //Flag reservation dates on each row in --- before making changes to cell.
+    $('#holds-table').on( 'init.dt', function () {
+      $("#holds-table").find("th:contains('Hold date')").attr("id","DateColumn");
+      var dateColumn = $("#DateColumn").index() + 1;
+      $("#holds-table").find("td:nth-child(" + dateColumn + ")").addClass("reserveDate");
+      $(".reserveDate").each(function() {
+        var fetchDate=new Date($(this).text());
+        var fetchDay=('0'+(fetchDate.getDate())).slice(-2);
+        var fetchMonth=('0'+(fetchDate.getMonth()+1)).slice(-2);
+        var fetchYear=fetchDate.getFullYear();
+        var reserveDate=fetchYear+fetchMonth+fetchDay;
+        fetchDate=new Date();
+        fetchDay=('0'+(fetchDate.getDate())).slice(-2);
+        fetchMonth=('0'+(fetchDate.getMonth()+1)).slice(-2);
+        fetchYear=fetchDate.getFullYear();
+        var todaysDate=fetchYear+fetchMonth+fetchDay;
+        $(this).attr('todaysdate',todaysDate);
+        $(this).attr('reservedate',reserveDate);
+      });
+  
+      $(".reserveDate").each(function() {
+        if ($(this).attr("reservedate") > $(this).attr("todaysdate")) {
+          $(this).append('<br /><br /><span class="badge" style="font-size: 1.05em"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> Future date <i class="fa fa-calendar-plus-o" aria-hidden="true"></i></span><br /><br />');
+        }  
+      });
+    });
+    
+  var bib_id_number = $('#catalog_detail #exportModal_ .modal-content input[name="bib"]').val();
+  var item_details_bib_id_number = $('#catalog_moredetail #exportModal_ .modal-content input[name="bib"]').val();
+  var delete_bib_id_number = $('#cataloguing_additem_newitem input[name="biblionumber"]').val();
+  
+    console.log("bib_id_number: " + bib_id_number);
+    console.log("item_details_bib_id_number: " + item_details_bib_id_number);
+    console.log("delete_bib_id_number: " + delete_bib_id_number);
+  
+    $('.local td:not(:first-child').click(function( event ) { 
+      event.preventDefault(); 
+      event.stopImmediatePropagation(); 
+      event.stopPropagation(); 
+    }); 
+    
+    
+    var copyBtn = document.querySelector('#report_data_copy_btn');
+    copyBtn.addEventListener('click', function () {
+      var report_results_table = document.getElementById('report_results');
+     
+    // create a Range object
+      var range = document.createRange();  
+    // set the Node to select the "range"
+      range.selectNode(report_results_table);
+    // add the Range to the set of window selections
+      window.getSelection().addRange(range);
+     
+    // execute 'copy', can't 'cut' in this case
+      document.execCommand('copy');
+  }, false);
+  
+   
+  }); 
+  /* ==================== */
+  
+  
+  
+  /* JS for Batch Permissions Modifier
+     Please do not modify */
+  function submitHandlerMemberFlags(submitEvent) {
+    let bn = document.querySelector("input[name='member']").value;
+    $.get("/api/v1/contrib/bpm/patrons/" + bn + "/check");
+  }
+  
+  function submitHandlerPatronLists(submitEvent) {
+    let patron_list_id = document.querySelector("input[name='patron_list_id']").value;
+    $.get("/api/v1/contrib/bpm/patrons/" + patron_list_id + "/check_list");
+  }
+  
+  $(document).ready(function() {
+    let form = document.querySelector("form[action='/cgi-bin/koha/members/member-flags.pl']");
+    if (form) {
+  
+      form.addEventListener("submit", submitHandlerMemberFlags);
+      $("form[action='/cgi-bin/koha/members/member-flags.pl'] input[type='submit']").click(function(e){
+          submitHandlerMemberFlags();
+      });
+  
+      let bn = document.querySelector("input[name='member']").value;
+  
+      $.get("/api/v1/contrib/bpm/patrons/" + bn + "/check_status", function(data) {
+  
+        let form = document.querySelector("form[action='/cgi-bin/koha/members/member-flags.pl']");
+        if (data.is_template_patron) {
+          let html_new = "<h1>Patron is a permissions template for the following patron lists:</h1><ul>";
+          for (var i = 0, len = data.patron_lists.length; i < len; i++) {
+            html_new += "<li><a href='/cgi-bin/koha/patron_lists/list.pl?patron_list_id=" + data.patron_lists[i].patron_list_id + "'>" + data.patron_lists[i].name + "</a></li>";
+          }
+          html_new += "</ul>";
+  
+          var span = document.createElement('span');
+          span.innerHTML = html_new;
+  
+          form.parentNode.insertBefore(span, form);
+  
+        } else {
+          if (data.patron_list) {
+            form.insertAdjacentHTML("beforebegin", "<h1>This patron's permissions are controlled by the permissions template patron <a href='/cgi-bin/koha/members/moremember.pl?borrowernumber=" + data.template_patron.borrowernumber + "'>" + data.template_patron.surname + "</a></h1>");
+            $('#permissions_toolbar, #flag_form h1').remove();
+            $('#permissionstree input').attr('disabled','disabled');        }
+        }
+      });
+  
+    }
+  
+    form = document.querySelector("form#add_patrons[action='list.pl']");
+    if (form) {
+      form.addEventListener("submit", submitHandlerPatronLists);
+      $("form#add_patrons[action='list.pl'] input[type='submit']").click(function(e){
+          submitHandlerPatronLists();
+      });
+    }
+  }); 
+  
+  /* End of JS for Batch Permissions Modifier */
